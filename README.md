@@ -5,335 +5,405 @@
 [![GitHub Stars](https://img.shields.io/github/stars/username/Survey-CodeLLM4LowResource-DSL?style=social)](https://github.com/username/Survey-CodeLLM4LowResource-DSL)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-[![Last Updated](https://img.shields.io/badge/Last%20Updated-September%202025-blue)]()
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-2024-blue)]()
 
 </div>
 
 This repository contains resources referenced in the paper: [A Survey on LLM-based Code Generation for Low-Resource and Domain-Specific Programming Languages](https://arxiv.org/pdf/2410.03981).
 
-
-
 ---
 
 ## 🔥 What's New
 
-- **[September 2025]** 📄 Our survey paper is accepted at ACM Transactions on Software Engineering and Methodology
-(TOSEM)
-- **[September 2025]** 📊 Comprehensive analysis of 111 papers covering 40+ programming languages
-- **[September 2025]** 🚀 Repository launched with complete paper categorization and analysis
+- **[2024]** 📄 Survey paper submitted: "A Survey on LLM-based Code Generation for Low-Resource and Domain-Specific Programming Languages"
+- **[2024]** 📊 Comprehensive analysis of 111 papers covering 40+ programming languages
+- **[2024]** 🚀 Repository launched with complete paper categorization and analysis
 
 ## 📖 Overview
 
-Large Language Models (LLMs) have shown remarkable capabilities in code generation for popular programming languages. However, their performance in **Low-Resource Programming Languages (LRPLs)** and **Domain-Specific Languages (DSLs)** remains a critical challenge. This gap affects millions of developers - with Rust alone having 3.5 million users - who are currently unable to fully leverage LLM capabilities. 
+Large Language Models (LLMs) have shown remarkable capabilities in code generation for popular programming languages. However, their performance in **Low-Resource Programming Languages (LRPLs)** and **Domain-Specific Languages (DSLs)** remains a critical challenge. 
 
-Our survey fills this gap by providing a **systematic review of 111 papers** filtered from over 27,000 published studies from 2020-2025, investigating the capabilities and limitations of LLMs in these specialized domains. We identify four main evaluation techniques, categorize enhancement methods into six groups, and analyze dataset curation approaches for LRPLs and DSLs.
+Our survey provides a **systematic review of 111 papers** filtered from over 27,000 published studies from 2020-2024, investigating the capabilities and limitations of LLMs in these specialized domains. We identify four main evaluation techniques, categorize enhancement methods into six groups, and analyze dataset curation approaches for LRPLs and DSLs.
 
 <div align="center">
 
 <img src="assets/heatmap.PNG" width="800px">
 
-*Figure 3: Performance comparison between High-Resource Programming Languages (HRPLs) and Low-Resource Programming Languages (LRPLs) on the MultiPL-E benchmark. The heatmap shows significant performance disparities, between for example, Python and Rust.*
+*Figure 1: Performance comparison between High-Resource Programming Languages (HRPLs) and Low-Resource Programming Languages (LRPLs) on the MultiPL-E benchmark. The heatmap shows significant performance disparities, between for example, Python and Rust.*
 
 </div>
 
+
+### Research Questions
+
+Our systematic investigation addresses three key research questions:
+
+#### **RQ1: Which LLMs, Metrics and Benchmarks are used to evaluate code generation in LRPL and DSL Domains?**
+
+LLMs have been widely used for code generation with many models appearing on leaderboards, but most research focuses on popular languages dominated by Python. It is not clear which LLMs have been used for LRPLs and DSLs, and what evaluation metrics and benchmark datasets are used for these languages. Understanding this information helps assess LLM capabilities and identify whether new metrics are needed for LRPLs and DSLs.
+
+#### **RQ2: What strategies and methodologies have been proposed in the literature to enhance the performance of LLMs for code generation in LRPLs and DSLs?**
+
+Enhancing LLM performance in LRPL and DSL settings is essential for bridging capability gaps that prevent significant developer populations from leveraging AI-assisted coding tools. Specialized domains and resource-constrained languages present unique challenges, such as limited training data and highly specialized syntax, which general-purpose LLMs may not effectively address. Understanding proposed strategies and methodologies is crucial for identifying effective approaches and guiding future research.
+
+#### **RQ3: How are datasets for LRPLs and DSLs collected, processed, and utilized to support code generation tasks using LLMs?**
+
+High-quality datasets are fundamental to training LLMs for code generation tasks. However, LRPLs and DSLs often suffer from data scarcity and imbalance, which can significantly hinder LLM performance. Understanding the methodologies employed to collect, process, and utilize datasets for these specialized languages is critical for addressing data-related challenges and ensuring LLMs can generate accurate and reliable code.
+
+
 ### 🎯 Key Contributions
 
-- **Comprehensive Literature Review**: Systematic analysis of 111 papers from 27,000+ studies (2020-2025)
+- **Comprehensive Literature Review (RQ1)**: Systematic analysis of 111 papers filtered from 27,000+ studies (2020-2024)
+- **LLM & Evaluation Analysis (RQ1)**: Identification of models, metrics, and benchmarks used across LRPL/DSL domains
+- **Enhancement Methodology Taxonomy (RQ2)**: Six categories of techniques with effectiveness analysis
+- **Dataset Curation Analysis (RQ3)**: Comprehensive review of data collection, processing, and utilization strategies
 - **Performance Gap Analysis**: Quantitative comparison showing significant disparities between HRPLs and LRPLs/DSLs
-- **Methodology Taxonomy**: Six categories of enhancement techniques with effectiveness analysis
-- **Evaluation Framework**: Four evaluation approaches with domain-specific metrics
-- **Dataset Analysis**: Comprehensive review of data curation and preparation strategies
-- **Research Roadmap**: Identification of challenges and opportunities for future research
+- **Research Roadmap**: Identification of challenges and opportunities for future research directions
 
 
-## 📋 Complete Paper List
 
-### Low-Resource Programming Languages (LRPLs) - 51 Papers
+## 📊 Survey Statistics
 
-#### Rust (8 papers)
-- [128] **OctoPack: Instruction tuning code large language models** - *Muennighoff et al., 2023* - NeurIPS Workshop
-- [30] **Assessing Code Generation with Intermediate Languages** - *Deng et al., 2024* - arXiv
-- [47] **ReflectionCoder: Learning from Reflection Sequence for Enhanced One-off Code Generation** - *Ren et al., 2024* - arXiv  
-- [187] **MagiCoder: Empowering Code Generation with OSS-INSTRUCT** - *Wei et al., 2024* - ICML
-- [140] **IRCoder: Intermediate Representations Make Language Models Robust Multilingual Code Generators** - *Paul et al., 2024* - ACL
-- [176] **Investigating the performance of language models for completing code in functional programming languages: a haskell case study** - *Van Dam et al., 2024* - ICSE
-- [15] **McEval: Massively Multilingual Code Evaluation** - *Chai et al., 2025* - ICLR
-- [64] **Kotlin ML Pack: Technical Report** - *Titov et al., 2024* - arXiv
+| **Metric** | **Count** |
+|------------|-----------|
+| Total Papers Reviewed | 111 |
+| Initial Paper Pool | 27,000+ |
+| Time Period | 2020-2024 |
+| Programming Languages | 40+ |
+| Research Venues | 39 |
+| LRPL Papers | 51 |
+| DSL Papers | 59 |
+| Both LRPL & DSL | 1 |
 
-#### R (6 papers)
-- [13] **Knowledge transfer from high-resource to low-resource programming languages for code llms** - *Cassano et al., 2024* - OOPSLA
-- [14] **MultiPL-E: A Scalable and Polyglot Approach to Benchmarking Neural Code Generation** - *Cassano et al., 2023* - TSE
-- [33] **GenCodeSearchNet: A Benchmark Test Suite for Evaluating Generalization in Programming Language Understanding** - *Diera et al., 2023* - GenBench Workshop
-- [125] **User Centric Evaluation of Code Generation Tools** - *Miah & Zhu, 2024* - AITest
-- [147] **Time-Efficient Code Completion Model for the R Programming Language** - *Popov et al., 2021* - NLP4Prog Workshop
-- [118] **Python is Not Always the Best Choice: Embracing Multilingual Program of Thoughts** - *Luo et al., 2024* - EMNLP
+## 🛠️ Enhancement Techniques Analysis (RQ2)
 
-#### Kotlin (4 papers)
-- [64] **Kotlin ML Pack: Technical Report** - *Titov et al., 2024* - arXiv
-- [6] **Multi-lingual evaluation of code generation models** - *Athiwaratkun et al., 2023* - Amazon Science
-- [102] **XCodeEval: An Execution-based Large Scale Multilingual Multitask Benchmark** - *Khan et al., 2024* - ACL
-- [92] **Language models for code completion: A practical evaluation** - *Izadi et al., 2024* - ICSE
+### Techniques Distribution (from Figure 3a in survey)
+| Technique | Paper Count |
+|-----------|-------------|
+| **Fine-tuning** | 48 |
+| **Prompting Strategies** | 25 |
+| **Pre-training** | 22 |
+| **Iterative Feedback** | 11 |
+| **RAG** | 6 |
+| **Decoding** | 5 |
+| **DSL Creation** | 4 |
+| **Novel Architectures** | 3 |
+| **Knowledge Distillation** | 2 |
 
-#### Bash/Shell (5 papers)
-- [146] **DocCGen: Document-based Controlled Code Generation** - *Pimparkhede et al., 2024* - EMNLP
-- [162] **ShellGPT: Generative Pre-trained Transformer Model for Shell Language Understanding** - *Shi et al., 2023* - ISSRE
-- [179] **Tackling Execution-Based Evaluation for NL2Bash** - *Vo et al., 2024* - arXiv
-- [196] **InterCode: standardizing and benchmarking interactive coding with execution feedback** - *Yang et al., 2023* - NeurIPS
-- [215] **DocPrompting: Generating Code by Retrieving the Docs** - *Zhou et al., 2023* - ICLR
+### Base Models Used for Fine-tuning (from Figure 3b in survey)
+| Model Family | Usage Count |
+|--------------|-------------|
+| **LLaMA Family** | 14 |
+| **DeepSeek Family** | 10 |
+| **StarCoder Family** | 9 |
+| **CodeGen** | 6 |
+| **CodeQwen** | 4 |
+| **T5** | 3 |
+| **Mistral** | 3 |
+| **CodeT5** | 3 |
+| **CodeGPT** | 2 |
+| **GPT-2** | 2 |
+| **CodeGeeX** | 2 |
+| **Others** | 18 |
 
-#### Multi-Language Studies (15+ papers)
-- [137] **Measuring the impact of programming language distribution** - *Orlanski et al., 2023* - ICML
-- [188] **Batched Low-Rank Adaptation of Foundation Models** - *Wen & Chaudhuri, 2024* - ICLR
-- [193] **CodeScope: An Execution-based Multilingual Multitask Multidimensional Benchmark** - *Yan et al., 2024* - ACL
-- [143] **HumanEval-XL: A Multilingual Code Generation Benchmark** - *Peng et al., 2024* - LREC-COLING
-- [158] **StackEval: Benchmarking llms in coding assistance** - *Shah et al., 2024* - NeurIPS
+### Performance Improvement Examples (from Table 7 in survey)
+| Paper | Benchmark | Lang. | Model | Metric | Base | Finetuned |
+|-------|-----------|-------|-------|--------|------|-----------|
+| [128] | HumanEval | Rust | Starcoder | pass@1 | 21.8 | 23.4 |
+| [85] | Regex-turk | Regex | T5 | acc. | 58.0 | 64.2 |
+| [85] | FOL-mnli | FOL | T5 | acc. | 46.9 | 53.9 |
+| [85] | FOL-codesc | FOL | T5 | acc. | 58.6 | 59.0 |
+| [85] | LTL-synthesis | LTL | T5 | acc. | 87.5 | 87.9 |
+| [187] | MultiPL-E | Rust | CodeLLaMA-PY | pass@1 | 27.0 | 40.3 |
+| [176] | HumanEval-Haskell | Haskell | CodeGPT | ExMatch | 23.2 | 40.0 |
+| [19] | Thakur-et-al. | Verilog | LLaMA2 | pass@5 | 41.2 | 70.6 |
+| [15] | MCEval | Rust | CodeQwen-1.5 | pass@1 | 47.2 | 67.9 |
+| [64] | HumanEval-Kotlin | Kotlin | CodeLLAMA | pass@1 | 26.1 | 42.2 |
+| [64] | HumanEval-KOTLIN | Kotlin | DeepSeek | pass@1 | 41.0 | 55.3 |
 
-### Domain-Specific Languages (DSLs) - 59 Papers
+## 📊 Evaluation Metrics & Benchmarks (RQ1)
 
-#### Hardware Description Languages (25 papers)
+### Commonly Used Automatic Evaluation Metrics (from Table 3 in survey)
 
-**Verilog (20 papers):**
-- [19] **Data is all you need: Finetuning llms for chip design via an automated design-data augmentation framework** - *Chang et al., 2024* - DAC
-- [25] **Origen: Enhancing rtl code generation with code-to-code augmentation and self-reflection** - *Cui et al., 2024* - ICCAD
-- [78] **Autovcoder: A systematic framework for automated verilog code generation using llms** - *Gao et al., 2024* - ICCD
-- [80] **From English to ASIC: Hardware Implementation with Large Language Model** - *Goh et al., 2024* - arXiv
-- [113] **Verilogeval: Evaluating large language models for verilog code generation** - *Liu et al., 2023* - ICCAD
-- [114] **RTLCoder: Outperforming GPT-3.5 in Design RTL Generation** - *Liu et al., 2024* - LAD Workshop
-- [117] **Rtllm: An open-source benchmark for design rtl generation with large language model** - *Lu et al., 2024* - ASP-DAC
-- [130] **A multi-expert large language model architecture for verilog code generation** - *Nadimi & Zheng, 2024* - LAD Workshop
-- [142] **BetterV: controlled verilog generation with discriminative guidance** - *Pei et al., 2024* - ICML
-- [149] **AutoBench: Automatic Testbench Generation and Evaluation Using LLMs for HDL Design** - *Qiu et al., 2024* - MLCAD
-- [170] **Benchmarking large language models for automated verilog rtl code generation** - *Thakur et al., 2023* - DATE
-- [172] **Advanced Large Language Model (LLM)-Driven Verilog Development** - *Thorat et al., 2023* - arXiv
-- [177] **VHDLEval: A Framework for Evaluating Large Language Models in VHDL Code Generation** - *Vijayaraghavan et al., 2024* - LAD Workshop
-- [208] **MG-Verilog: Multi-grained Dataset Towards Enhanced LLM-assisted Verilog Generation** - *Zhang et al., 2024* - LAD Workshop
-- [210] **CodeV: Empowering LLMs for Verilog Generation through Multi-Level Summarization** - *Zhao et al., 2024* - arXiv
+| Metrics | Languages | Papers |
+|---------|-----------|--------|
+| **pass@k** | Awk, Bash, Codon, CoffeeScript, Crystal, D, Dart, Elixir, Erlang, Fortran, Go, Groovy, Haskell, Julia, Kotlin, Lean, Lua, Nim, OCaml, Pascal, Perl, PHP, PowerShell, R, Racket, Ruby, Rust, Scala, Scheme, Swift, Tcl, Verilog, VHDL, Vim script, F#, Terraform | [6, 13–15, 19, 25, 30, 41, 47, 62, 64, 78, 80, 102, 113, 114, 128, 130, 131, 137, 140, 142, 143, 149, 170, 177, 187, 192, 193, 208, 210, 215] [103, 205] |
+| **BLEU** | Ansible, Assembly, Bash, Codon, Crystal, CQL, D, Fortran, GitHub Actions YAML, Haskell, Kotlin, LLVM IR, Nim, PowerShell, Ruby, Rust, Scala, Swift, Verilog | [26, 53, 92, 107, 109, 140, 148, 162, 195, 199, 207, 215] |
+| **ROUGE** | Assembly, Codon, Crystal, D, Fortran, Haskell, Julia, Kotlin, Lua, Nim, PowerShell, R, Ruby, Rust, Scala, Swift | [13, 92, 109, 140, 195] |
+| **Edit Similarity** | Kotlin, Rust, Scala, Ruby, Haskell, Bash | [92, 109, 162, 176] |
+| **Exact Match** | Kotlin, Rust, Scala, Ruby, Regex, FOL, LTL, Ansible, Assembly, LLVM IR, CAD, Haskell, R, OCL, CQL, Bash, YAML | [2, 26, 53, 85, 92, 125, 139, 146, 148, 174, 176, 195, 215] |
+| **METEOR** | Kotlin, Rust, Scala, Ruby, Assembly, PowerShell | [92, 109, 195] |
 
-#### Infrastructure & Automation (7 papers)
-- [132] **KubePlaybook: A Repository of Ansible Playbooks for Kubernetes Auto-Remediation with LLMs** - *Namrud et al., 2024* - ICPE
-- [146] **DocCGen: Document-based Controlled Code Generation** - *Pimparkhede et al., 2024* - EMNLP
-- [148] **Automated Code Generation for Information Technology Tasks in YAML through Large Language Models** - *Pujar et al., 2025* - DAC
-- [154] **Ansible lightspeed: A code generation service for it automation** - *Sahoo et al., 2024* - ASE
-- [207] **On the effectiveness of large language models for github workflows** - *Zhang et al., 2024* - ARES
-- [103] **Iac-eval: A code generation benchmark for cloud infrastructure-as-code programs** - *Kon et al., 2024* - NeurIPS
+### Domain-Specific Evaluation Metrics (from Table 4 in survey)
 
-#### Formal Methods & Verification (10 papers)
-- [16] **Towards Neural Synthesis for SMT-Assisted Proof-Oriented Programming** - *Chakraborty et al., 2025* - ICSE
-- [36] **Towards a Mathematics Formalisation Assistant using Large Language Models** - *Agrawal et al., 2022* - arXiv
-- [41] **FIMO: A Challenge Formal Dataset for Automated Theorem Proving** - *Liu et al., 2023* - arXiv
-- [74] **Enhancing Formal Theorem Proving: A Comprehensive Dataset for Training AI Models on Coq Code** - *Florath, 2024* - arXiv
-- [191] **Advancing Theorem Proving in LLMs through Large-Scale Synthetic Data** - *Xin et al., 2024* - NeurIPS Workshop
-- [200] **Leveraging Large Language Models for Automated Proof Synthesis in Rust** - *Yao et al., 2023* - arXiv
-- [126] **Synthetic programming elicitation for text-to-code in very low-resource programming and formal languages** - *Mora et al., 2024* - NeurIPS
-
-#### Logic & Specification Languages (8 papers)
-- [24] **nl2spec: Interactively translating unstructured natural language to temporal logics with large language models** - *Cosler et al., 2023* - CAV
-- [85] **Formal Specifications from Natural Language** - *Hahn et al., 2022* - arXiv
-- [136] **LINC: A Neurosymbolic Approach for Logical Reasoning by Combining Language Models with First-Order Logic Provers** - *Olausson et al., 2023* - EMNLP
-- [199] **Harnessing the Power of Large Language Models for Natural Language to First-Order Logic Translation** - *Yang et al., 2024* - ACL
-
-#### Scientific & Specialized Domains (9 papers)
-- [97] **Flame: A small language model for spreadsheet formulas** - *Joshi et al., 2024* - AAAI
-- [139] **Sketchgen: Generating constrained cad sketches** - *Para et al., 2021* - NeurIPS
-- [145] **What If: Generating Code to Answer Simulation Questions in Chemistry Texts** - *Peretz et al., 2023* - SIGIR
-- [165] **Errors are Useful Prompts: Instruction Guided Task Programming with Verifier-Assisted Iterative Prompting** - *Skreta et al., 2023* - arXiv
-- [166] **Generating consistent PDDL domains with Large Language Models** - *Smirnov et al., 2024* - arXiv
-- [180] **Grammar prompting for domain-specific language generation with large language models** - *Wang et al., 2023* - NeurIPS
-
----
-
-## 🏆 Major Benchmarks & Datasets
-
-### Multi-Language Benchmarks
-
-| Benchmark | Languages | Papers | Description |
-|-----------|-----------|--------|-------------|
-| **MultiPL-E** | Bash, Lua, Perl, R, Ruby, Racket, D, Go, Julia, Rust, Scala, Swift | [13], [14], [57], [137], [140], [187], [188], [190], [205] | First massive multi-lingual benchmark including LRPLs |
-| **xCodeEval** | Kotlin, Ruby, Rust (+ 8 others) | [102] | 2.5K problems with executable evaluation |
-| **CodeScope** | Ruby, Kotlin, D, Perl, Rust, Delphi (+ 8 others) | [193] | Multi-dimensional evaluation framework |
-| **MBXP** | Ruby, Kotlin, Scala, Swift, Perl | [6] | Mathematical reasoning benchmark |
-| **BabelCode** | Dart, Lua, Rust, C#, R, Julia, Haskell | [137] | Language diversity and syntax transfer |
-| **MCEval** | 40 programming languages | [15] | 16K samples across diverse languages |
-
-### Domain-Specific Benchmarks
-
-#### Hardware Design
-| Benchmark | Language | Papers | Description |
-|-----------|----------|--------|-------------|
-| **VerilogEval** | Verilog | [25], [78], [80], [113], [114], [130], [142], [149], [172], [177], [208], [210] | Standard Verilog benchmark (widely adopted) |
-| **RTLLM** | Verilog | [19], [25], [78], [114], [117], [172], [210] | 30 digital designs with testbenches |
-| **VHDL-Eval** | VHDL | [177] | VHDL code generation for FPGA development |
-
-#### Infrastructure & Automation
-| Benchmark | Language | Papers | Description |
-|-----------|----------|--------|-------------|
-| **TLDR** | Bash | [146], [215] | 1,879 Bash commands from community project |
-| **InterCode** | Bash | [196] | Interactive coding environment |
-| **NL-to-Ansible** | Ansible | [146] | Infrastructure automation tasks |
-| **IaC-Eval** | Terraform HCL | [103] | Cloud Infrastructure-as-Code generation |
-
-#### Formal Methods
-| Benchmark | Language | Papers | Description |
-|-----------|----------|--------|-------------|
-| **FIMO** | Lean | [41], [191] | IMO theorem proving challenges |
-| **miniF2F** | Lean | [41], [191] | Mathematical theorem proving |
-| **FOLIO** | FOL | [136], [199] | Natural language to logic reasoning |
-
----
-
-## 🛠️ Enhancement Techniques Analysis
-
-### Model Adaptation Techniques
-
-#### Fine-tuning Success Stories
-| Domain | Model | Base | Fine-tuned | Improvement | Paper |
-|--------|-------|------|------------|-------------|-------|
-| **Verilog** | CodeQwen | 60.0% | 68.1% | +8.1% | [142] |
-| **Verilog** | CodeLlama | 60.0% | 78.1% | +18.1% | [210] |
-| **Lean** | DeepSeek | 27.5% | 52.0% | +24.5% | [191] |
-| **Rust** | CodeLLaMA | 27.0% | 40.3% | +13.3% | [187] |
-| **Haskell** | CodeGPT | 23.2% | 40.0% | +16.8% | [176] |
-
-#### Most Popular Base Models
-| Model Family | Usage Count | Key Papers |
-|--------------|-------------|------------|
-| **LLaMA Family** | 14 papers | [71], [140], [187], [199], [210] |
-| **DeepSeek Family** | 10 papers | [25], [78], [84], [140], [142] |
-| **StarCoder Family** | 9 papers | [13], [62], [188] |
-| **CodeGen** | 6 papers | [134] |
-| **T5/CodeT5** | 4 papers | [85], [109], [184] |
-
-### Prompting Strategies
-
-#### Advanced Prompting Techniques
-| Technique | Papers | Languages | Key Benefits |
-|-----------|--------|-----------|--------------|
-| **Few-shot** | [1], [45], [170], [174], [177] | OCL, Vega-lite, Verilog, DSL, VHDL | Better accuracy than zero-shot |
-| **Chain-of-Thought** | [199] | FOL | Step-by-step logical reasoning |
-| **Grammar Prompting** | [180] | SMILES, PDDL, GeoQuery | Domain-specific syntax guidance |
-| **Hierarchical** | [131], [122] | Verilog | Complex task decomposition |
-| **Self-Planning** | [117] | Verilog | Model generates plan before code |
-
-### Iterative Feedback Approaches
-
-| Domain | Tool Used | Papers | Feedback Type |
-|--------|-----------|--------|---------------|
-| **Verilog** | iVerilog | [10], [122], [172] | Compilation errors |
-| **PLC** | MATIEC, NuXmv | [71] | Grammar + formal verification |
-| **Chemistry** | Rule-based verifier | [165] | Syntax checking |
-| **Rust/Verus** | Verus verifier | [200] | Proof validation |
-| **PDDL** | FastDownward planner | [166] | Planning consistency |
-
----
-
-## 📊 Evaluation Metrics & Approaches
-
-### Automatic Evaluation Metrics
-
-#### Functional Correctness
-| Metric | Languages | Papers | Description |
-|--------|-----------|--------|-------------|
-| **pass@k** | 35+ languages | 30+ papers | Most common metric across LRPLs/DSLs |
-| **Execution Accuracy** | Bash, CQL | [53], [179] | Real execution in controlled environments |
-| **Compilation Rate** | Verilog, SVA | [99] | Syntactic correctness validation |
-
-#### Similarity Metrics
-| Metric | Languages | Usage | Description |
-|--------|-----------|-------|-------------|
-| **BLEU** | 20+ languages | 12 papers | Text similarity comparison |
-| **ROUGE** | 16+ languages | 5 papers | Sequence matching evaluation |
-| **Edit Similarity** | 6 languages | 4 papers | Character/token level differences |
-| **Exact Match** | 15+ languages | 13 papers | Binary correctness measure |
-
-### Domain-Specific Evaluation
-
-#### Hardware Design (Verilog/VHDL)
-| Metric | Description | Papers |
+| Metric | Language(s) | Papers |
 |--------|-------------|--------|
-| **Power-Performance-Area (PPA)** | Multi-dimensional hardware evaluation | [50], [117], [122], [172] |
-| **Syn-VCS, Syn-DC** | Synthesis-based correctness | [114] |
-| **Area-Delay Product** | Physical implementation metrics | [56] |
+| **Ansible Aware Metric** | Ansible | [146, 148] |
+| **Schema Correct Metric** | Ansible | [146, 148] |
+| **Command Accuracy (CMD Acc)** | Bash | [146, 215] |
+| **Accuracy per Sequence** | Multiple | [85] |
+| **Semantic Accuracy** | Regex | [85, 115] |
+| **Pass@(scenario)** | Verilog | [170] |
+| **Syn-VCS, Syn-DC** | Verilog | [114] |
+| **Power-Performance-Area (PPA)** | Verilog | [50, 117, 122, 172] |
+| **Execution Accuracy** | Bash, CQL | [53, 179] |
+| **Logical Equivalence (LE)** | FOL | [199] |
+| **Verify@k** | F* | [16] |
 
-#### Logic & Formal Languages
-| Metric | Description | Papers |
-|--------|-------------|--------|
-| **Semantic Accuracy** | Logical equivalence for Regex/FOL | [85], [115] |
-| **Logical Equivalence** | Truth table comparison | [199] |
-| **Verify@k** | Formal verification success rate | [16] |
+### Major Benchmarks (from Table 5 in survey)
 
-#### Infrastructure Languages
-| Metric | Description | Papers |
-|--------|-------------|--------|
-| **Ansible Aware Metric** | Domain-specific syntax evaluation | [146], [148] |
-| **Schema Correct Metric** | Structural validation | [146], [148] |
-| **Command Accuracy** | Shell command correctness | [146], [215] |
+| Benchmark Name | Languages | Papers | Research Utilization |
+|----------------|-----------|--------|---------------------|
+| **MultiPL-E** | Bash, Lua, Perl, R, Ruby, Racket, D, Go, Julia, Rust, Scala, Swift | [13, 14, 57, 137, 140, 187, 188, 190] [205] | Cross-language comparison; knowledge transfer studies |
+| **xCodeEval** | Kotlin, Ruby, Rust | [102] | LRPL-focused evaluation; executable code testing |
+| **BabelCode** | Dart, Lua, Rust, C#, R, Julia, and Haskell | [137] | Language diversity studies; syntax transfer analysis |
+| **VerilogEval** | Verilog | [25, 78, 80, 113, 114, 130, 142, 149, 172, 177, 208, 210] | Standard Verilog benchmark; hardware LLM evaluation |
+| **RTLLM** | Verilog | [19, 25, 78, 114, 117, 172, 210] | Hardware design; RTL generation |
+| **TLDR** | Bash | [146, 215] | Command generation; system administration |
+| **FIMO** | Lean | [41, 191] | Theorem proving; formal math |
+| **FOLIO** | FOL | [136, 199] | Natural language to logic; reasoning tasks |
 
-### Manual Evaluation Approaches
+## 📚 Dataset Curation & Processing (RQ3)
 
-#### Expert Assessment Requirements
-| Domain | Expert Type | Evaluation Focus | Papers |
-|--------|-------------|------------------|--------|
-| **Hardware** | Hardware engineers | Design quality, synthesis | [10], [99], [121] |
-| **Chemistry** | Chemists | Scientific validity | [165] |
-| **Mathematics** | Mathematicians | Proof correctness | [74], [191] |
-| **PLC** | Control engineers | Industry standards | [71] |
+### Data Source Categories (from survey analysis)
 
----
+#### Curated Datasets
+| Approach | Description | Example Papers |
+|----------|-------------|----------------|
+| **Existing Datasets** | Direct use of pre-existing datasets | [176], [136], [165] |
+| **Modified Existing Datasets** | Adaptation of existing datasets for specific goals | [146], [195], [196] |
+| **Collected Datasets** | Gathering data from various sources | [57], [64], [190] |
 
-## 📚 Dataset Curation & Processing
+#### Data Sources by Type
+| Source Type | Examples | Languages | Papers |
+|-------------|----------|-----------|--------|
+| **Code Repositories** | GitHub, GitLab | Most LRPLs/DSLs | [4, 6, 76, 147, 192] |
+| **Educational Resources** | Textbooks, HDLBits, University courses | R, Verilog, Lean | [125], [170], [36], [191] |
+| **Programming Contests** | Codeforces, contest platforms | Multiple | [102], [140] |
+| **Specialized Sources** | Stack Overflow, Technical forums | Multiple | [28], [57] |
 
-### Data Sources by Category
-
-#### Code Repositories
-| Source | Languages | Papers | Description |
-|--------|-----------|--------|-------------|
-| **GitHub** | Most LRPLs/DSLs | 25+ papers | Primary source for code data |
-| **GitLab** | Various | [148] | Alternative repository platform |
-| **Programming Contests** | Multiple | [102], [140] | Clean, self-contained problems |
-
-#### Educational Resources
-| Source | Languages | Papers | Usage |
-|--------|-----------|--------|-------|
-| **Textbooks** | R, Verilog | [125], [170] | High-quality examples |
-| **HDLBits** | Verilog | [113] | Hardware design exercises |
-| **University Courses** | Lean, Coq | [36], [191] | Formal methods materials |
-
-#### Specialized Sources
-| Source | Domain | Papers | Content Type |
-|--------|--------|--------|--------------|
-| **Stack Overflow** | Multiple | [28], [57] | Q&A and problem-solving |
-| **Technical Forums** | Hardware, Excel | [97], [99] | Community knowledge |
-| **Industrial Datasets** | Ansible, PLC | [154], [71] | Real-world applications |
-
-### Synthetic Data Generation
-
-#### LLM-based Generation
+#### Synthetic Data Generation
 | Generator Model | Target Languages | Papers | Approach |
 |-----------------|------------------|--------|----------|
 | **GPT-3.5/4** | Verilog, Kotlin, FOL | [113], [64], [199] | Problem-solution generation |
-| **Claude-3-Haiku** | Verilog | [25] | Code-to-code augmentation |
+| **Claude3-Haiku** | Verilog | [25] | Code-to-code augmentation |
 | **StarCoder-15B** | Multiple LRPLs | [13] | Cross-language translation |
 | **DeepSeek** | Lean | [191] | Quality classification |
 
-### Data Processing Pipeline
+### Data Processing Pipeline (from survey Section 6.2)
 
-#### Standard Processing Steps
 1. **Initial Filtering**: File extensions, size limits, license compatibility
-2. **Deduplication**: MinHash, ROUGE-L based approaches  
-3. **Fine-grained Filtering**: Syntax validation, domain rules
-4. **Code Extraction**: Comment separation, structure preservation
+2. **Deduplication**: MinHash, ROUGE-L based approaches
+3. **Fine-grained Filtering**: Syntax validation, domain-specific rules
+4. **Code Extraction and Cleaning**: Comment separation, structure preservation
 5. **Quality Checks**: Compilation tests, static analysis
 6. **Dataset-specific Processing**: Domain adaptations
 7. **Decontamination**: Benchmark data removal
 
-#### Domain-Specific Adaptations
-| Domain | Special Processing | Papers | Tools Used |
-|--------|-------------------|--------|------------|
-| **Verilog** | Module extraction, synthesis validation | [113], [210] | PyVerilog, iVerilog |
-| **R** | RMD to R conversion, metadata addition | [33], [147] | Custom parsers |
-| **Excel** | Formula normalization, case handling | [97] | Custom tokenizers |
-| **Hardware** | Visual element conversion to text | [113] | Manual annotation |
- 
+## 📋 Complete Paper List by Category
+
+### Low-Resource Programming Languages (LRPLs) - 51 Papers
+
+#### Systems Programming
+- **Rust**: 
+  - [128] **OctoPack: Instruction tuning code large language models** - *Muennighoff et al., 2023*
+  - [30] **Assessing Code Generation with Intermediate Languages** - *Deng et al., 2024*
+  - [47] **ReflectionCoder: Learning from Reflection Sequence for Enhanced One-off Code Generation** - *Ren et al., 2024*
+  - [187] **MagiCoder: Empowering Code Generation with OSS-INSTRUCT** - *Wei et al., 2024*
+  - [140] **IRCoder: Intermediate Representations Make Language Models Robust Multilingual Code Generators** - *Paul et al., 2024*
+  - [176] **Investigating the performance of language models for completing code in functional programming languages: a haskell case study** - *Van Dam et al., 2024*
+  - [15] **McEval: Massively Multilingual Code Evaluation** - *Chai et al., 2025*
+  - [64] **Kotlin ML Pack: Technical Report** - *Titov et al., 2024*
+
+- **D**: 
+  - [140] **IRCoder: Intermediate Representations Make Language Models Robust Multilingual Code Generators** - *Paul et al., 2024*
+  - [188] **Batched Low-Rank Adaptation of Foundation Models** - *Wen & Chaudhuri, 2024*
+  - [14] **MultiPL-E: A Scalable and Polyglot Approach to Benchmarking Neural Code Generation** - *Cassano et al., 2023*
+
+- **Nim**: 
+  - [140] **IRCoder: Intermediate Representations Make Language Models Robust Multilingual Code Generators** - *Paul et al., 2024*
+
+- **Crystal**: 
+  - [140] **IRCoder: Intermediate Representations Make Language Models Robust Multilingual Code Generators** - *Paul et al., 2024*
+
+#### Mobile & Cross-Platform
+- **Swift**: 
+  - [6] **Multi-lingual evaluation of code generation models** - *Athiwaratkun et al., 2023*
+  - [140] **IRCoder: Intermediate Representations Make Language Models Robust Multilingual Code Generators** - *Paul et al., 2024*
+  - [14] **MultiPL-E: A Scalable and Polyglot Approach to Benchmarking Neural Code Generation** - *Cassano et al., 2023*
+  - [143] **HumanEval-XL: A Multilingual Code Generation Benchmark** - *Peng et al., 2024*
+
+- **Dart**: 
+  - [137] **Measuring the impact of programming language distribution** - *Orlanski et al., 2023*
+
+- **Kotlin**: 
+  - [6] **Multi-lingual evaluation of code generation models** - *Athiwaratkun et al., 2023*
+  - [64] **Kotlin ML Pack: Technical Report** - *Titov et al., 2024*
+  - [92] **Language models for code completion: A practical evaluation** - *Izadi et al., 2024*
+  - [102] **XCodeEval: An Execution-based Large Scale Multilingual Multitask Benchmark** - *Khan et al., 2024*
+  - [143] **HumanEval-XL: A Multilingual Code Generation Benchmark** - *Peng et al., 2024*
+
+#### Scripting & Automation
+- **Ruby**: 
+  - [6] **Multi-lingual evaluation of code generation models** - *Athiwaratkun et al., 2023*
+  - [82] **MultiCoder: Multi-Programming-Lingual Pre-Training for Low-Resource Code Completion** - *Gong et al., 2022*
+  - [92] **Language models for code completion: A practical evaluation** - *Izadi et al., 2024*
+  - [102] **XCodeEval: An Execution-based Large Scale Multilingual Multitask Benchmark** - *Khan et al., 2024*
+  - [14] **MultiPL-E: A Scalable and Polyglot Approach to Benchmarking Neural Code Generation** - *Cassano et al., 2023*
+
+- **Perl**: 
+  - [6] **Multi-lingual evaluation of code generation models** - *Athiwaratkun et al., 2023*
+  - [188] **Batched Low-Rank Adaptation of Foundation Models** - *Wen & Chaudhuri, 2024*
+  - [143] **HumanEval-XL: A Multilingual Code Generation Benchmark** - *Peng et al., 2024*
+
+- **Lua**: 
+  - [13] **Knowledge transfer from high-resource to low-resource programming languages for code llms** - *Cassano et al., 2024*
+  - [14] **MultiPL-E: A Scalable and Polyglot Approach to Benchmarking Neural Code Generation** - *Cassano et al., 2023*
+  - [137] **Measuring the impact of programming language distribution** - *Orlanski et al., 2023*
+
+- **PowerShell**: 
+  - [109] **The Power of Words: Generating PowerShell Attacks from Natural Language** - *Liguori et al., 2024*
+  - [191] **Advancing Theorem Proving in LLMs through Large-Scale Synthetic Data** - *Xin et al., 2024*
+
+#### Functional Programming
+- **Haskell**: 
+  - [137] **Measuring the impact of programming language distribution** - *Orlanski et al., 2023*
+  - [140] **IRCoder: Intermediate Representations Make Language Models Robust Multilingual Code Generators** - *Paul et al., 2024*
+  - [176] **Investigating the performance of language models for completing code in functional programming languages: a haskell case study** - *Van Dam et al., 2024*
+
+- **Scala**: 
+  - [92] **Language models for code completion: A practical evaluation** - *Izadi et al., 2024*
+  - [102] **XCodeEval: An Execution-based Large Scale Multilingual Multitask Benchmark** - *Khan et al., 2024*
+  - [14] **MultiPL-E: A Scalable and Polyglot Approach to Benchmarking Neural Code Generation** - *Cassano et al., 2023*
+  - [143] **HumanEval-XL: A Multilingual Code Generation Benchmark** - *Peng et al., 2024*
+
+- **Racket**: 
+  - [13] **Knowledge transfer from high-resource to low-resource programming languages for code llms** - *Cassano et al., 2024*
+  - [14] **MultiPL-E: A Scalable and Polyglot Approach to Benchmarking Neural Code Generation** - *Cassano et al., 2023*
+
+- **OCaml**: 
+  - [13] **Knowledge transfer from high-resource to low-resource programming languages for code llms** - *Cassano et al., 2024*
+
+#### Scientific Computing
+- **R**: 
+  - [13] **Knowledge transfer from high-resource to low-resource programming languages for code llms** - *Cassano et al., 2024*
+  - [14] **MultiPL-E: A Scalable and Polyglot Approach to Benchmarking Neural Code Generation** - *Cassano et al., 2023*
+  - [33] **GenCodeSearchNet: A Benchmark Test Suite for Evaluating Generalization in Programming Language Understanding** - *Diera et al., 2023*
+  - [125] **User Centric Evaluation of Code Generation Tools** - *Miah & Zhu, 2024*
+  - [147] **Time-Efficient Code Completion Model for the R Programming Language** - *Popov et al., 2021*
+  - [118] **Python is Not Always the Best Choice: Embracing Multilingual Program of Thoughts** - *Luo et al., 2024*
+
+- **Julia**: 
+  - [12] **A Comparative Study of Code Generation using ChatGPT 3.5 across 10 Programming Languages** - *Buscemi, 2023*
+  - [79] **Evaluation of openai codex for hpc parallel programming models kernel generation** - *Godoy et al., 2023*
+  - [137] **Measuring the impact of programming language distribution** - *Orlanski et al., 2023*
+  - [14] **MultiPL-E: A Scalable and Polyglot Approach to Benchmarking Neural Code Generation** - *Cassano et al., 2023*
+
+- **Fortran**: 
+  - [66] **Scope is all you need: Transforming LLMs for HPC Code** - *Kadosh et al., 2023*
+  - [79] **Evaluation of openai codex for hpc parallel programming models kernel generation** - *Godoy et al., 2023*
+  - [140] **IRCoder: Intermediate Representations Make Language Models Robust Multilingual Code Generators** - *Paul et al., 2024*
+  - [159] **S3LLM: Large-Scale Scientific Software Understanding with LLMs** - *Shaik et al., 2024*
+
+#### Shell & Command Line
+- **Bash**: 
+  - [146] **DocCGen: Document-based Controlled Code Generation** - *Pimparkhede et al., 2024*
+  - [162] **ShellGPT: Generative Pre-trained Transformer Model for Shell Language Understanding** - *Shi et al., 2023*
+  - [179] **Tackling Execution-Based Evaluation for NL2Bash** - *Vo et al., 2024*
+  - [196] **InterCode: standardizing and benchmarking interactive coding with execution feedback** - *Yang et al., 2023*
+  - [215] **DocPrompting: Generating Code by Retrieving the Docs** - *Zhou et al., 2023*
+
+### Domain-Specific Languages (DSLs) - 59 Papers
+
+#### Hardware Description Languages (25 papers)
+- **Verilog**: 
+  - [19] **Data is all you need: Finetuning llms for chip design via an automated design-data augmentation framework** - *Chang et al., 2024*
+  - [25] **Origen: Enhancing rtl code generation with code-to-code augmentation and self-reflection** - *Cui et al., 2024*
+  - [78] **Autovcoder: A systematic framework for automated verilog code generation using llms** - *Gao et al., 2024*
+  - [80] **From English to ASIC: Hardware Implementation with Large Language Model** - *Goh et al., 2024*
+  - [113] **Verilogeval: Evaluating large language models for verilog code generation** - *Liu et al., 2023*
+  - [114] **RTLCoder: Outperforming GPT-3.5 in Design RTL Generation** - *Liu et al., 2024*
+  - [117] **Rtllm: An open-source benchmark for design rtl generation with large language model** - *Lu et al., 2024*
+  - [130] **A multi-expert large language model architecture for verilog code generation** - *Nadimi & Zheng, 2024*
+  - [142] **BetterV: controlled verilog generation with discriminative guidance** - *Pei et al., 2024*
+  - [149] **AutoBench: Automatic Testbench Generation and Evaluation Using LLMs for HDL Design** - *Qiu et al., 2024*
+  - [170] **Benchmarking large language models for automated verilog rtl code generation** - *Thakur et al., 2023*
+  - [172] **Advanced Large Language Model (LLM)-Driven Verilog Development** - *Thorat et al., 2023*
+  - [177] **VHDLEval: A Framework for Evaluating Large Language Models in VHDL Code Generation** - *Vijayaraghavan et al., 2024*
+  - [208] **MG-Verilog: Multi-grained Dataset Towards Enhanced LLM-assisted Verilog Generation** - *Zhang et al., 2024*
+  - [210] **CodeV: Empowering LLMs for Verilog Generation through Multi-Level Summarization** - *Zhao et al., 2024*
+
+- **VHDL**: 
+  - [177] **VHDLEval: A Framework for Evaluating Large Language Models in VHDL Code Generation** - *Vijayaraghavan et al., 2024*
+
+- **System Verilog**: 
+  - [75] **Hardware phi-1.5 b: A large language model encodes hardware domain specific knowledge** - *Fu et al., 2024*
+  - [99] **(Security) Assertions by Large Language Models** - *Kande et al., 2024*
+  - [121] **Chiraag: Chatgpt informed rapid and automated assertion generation** - *Mali et al., 2024*
+  - [194] **AssertLLM: Generating Hardware Verification Assertions from Design Specifications via Multi-LLMs** - *Yan et al., 2025*
+
+#### Infrastructure & Automation (7 papers)
+- **Ansible**: 
+  - [132] **KubePlaybook: A Repository of Ansible Playbooks for Kubernetes Auto-Remediation with LLMs** - *Namrud et al., 2024*
+  - [146] **DocCGen: Document-based Controlled Code Generation** - *Pimparkhede et al., 2024*
+  - [148] **Automated Code Generation for Information Technology Tasks in YAML through Large Language Models** - *Pujar et al., 2025*
+  - [154] **Ansible lightspeed: A code generation service for it automation** - *Sahoo et al., 2024*
+
+- **YAML**: 
+  - [207] **On the effectiveness of large language models for github workflows** - *Zhang et al., 2024*
+
+- **Terraform HCL**: 
+  - [103] **Iac-eval: A code generation benchmark for cloud infrastructure-as-code programs** - *Kon et al., 2024*
+
+#### Formal Methods & Verification (10 papers)
+- **Lean**: 
+  - [36] **Towards a Mathematics Formalisation Assistant using Large Language Models** - *Agrawal et al., 2022*
+  - [41] **FIMO: A Challenge Formal Dataset for Automated Theorem Proving** - *Liu et al., 2023*
+  - [191] **Advancing Theorem Proving in LLMs through Large-Scale Synthetic Data** - *Xin et al., 2024*
+
+- **Coq**: 
+  - [74] **Enhancing Formal Theorem Proving: A Comprehensive Dataset for Training AI Models on Coq Code** - *Florath, 2024*
+
+- **F***: 
+  - [16] **Towards Neural Synthesis for SMT-Assisted Proof-Oriented Programming** - *Chakraborty et al., 2025*
+
+- **Verus**: 
+  - [200] **Leveraging Large Language Models for Automated Proof Synthesis in Rust** - *Yao et al., 2023*
+
+- **UCLID5**: 
+  - [126] **Synthetic programming elicitation for text-to-code in very low-resource programming and formal languages** - *Mora et al., 2024*
+
+#### Logic & Specification Languages (8 papers)
+- **FOL**: 
+  - [85] **Formal Specifications from Natural Language** - *Hahn et al., 2022*
+  - [136] **LINC: A Neurosymbolic Approach for Logical Reasoning by Combining Language Models with First-Order Logic Provers** - *Olausson et al., 2023*
+  - [199] **Harnessing the Power of Large Language Models for Natural Language to First-Order Logic Translation** - *Yang et al., 2024*
+
+- **LTL**: 
+  - [24] **nl2spec: Interactively translating unstructured natural language to temporal logics with large language models** - *Cosler et al., 2023*
+  - [85] **Formal Specifications from Natural Language** - *Hahn et al., 2022*
+
+- **Regex**: 
+  - [85] **Formal Specifications from Natural Language** - *Hahn et al., 2022*
+  - [115] **Neural Generation of Regular Expressions from Natural Language with Minimal Domain Knowledge** - *Locascio et al., 2016*
+
+#### Scientific & Specialized Domains (9 papers)
+- **Excel Formulas**: 
+  - [97] **Flame: A small language model for spreadsheet formulas** - *Joshi et al., 2024*
+
+- **CAD Sketches**: 
+  - [139] **Sketchgen: Generating constrained cad sketches** - *Para et al., 2021*
+
+- **XDL (Chemistry)**: 
+  - [165] **Errors are Useful Prompts: Instruction Guided Task Programming with Verifier-Assisted Iterative Prompting** - *Skreta et al., 2023*
+
+- **PDDL**: 
+  - [166] **Generating consistent PDDL domains with Large Language Models** - *Smirnov et al., 2024*
+  - [180] **Grammar prompting for domain-specific language generation with large language models** - *Wang et al., 2023*
+
+- **SMILES**: 
+  - [180] **Grammar prompting for domain-specific language generation with large language models** - *Wang et al., 2023*
+
 ## 📞 Contact
 - **Sathvik Joel**
   - 📧 [ksjoe30@gmail.com](mailto:ksjoe30@gmail.com)
@@ -343,7 +413,6 @@ Our survey fills this gap by providing a **systematic review of 111 papers** fil
 
 - **Fatemeh Fard** 
   - 📧 [fatemeh.fard@ubc.ca](mailto:fatemeh.fard@ubc.ca)  
-
 
 ## 📜 Citation  
 
@@ -356,7 +425,6 @@ Our survey fills this gap by providing a **systematic review of 111 papers** fil
 }
 ```
 
-
 <div align="center">
 
 **🌟 If you find this survey useful, please give it a star! 🌟**
@@ -365,6 +433,6 @@ Our survey fills this gap by providing a **systematic review of 111 papers** fil
 
 ---
 
-*Last updated: Septemper 2025*
+*Last updated: 2024*
 
 </div>
