@@ -13,19 +13,7 @@ This repository contains resources referenced in the paper: [A Survey on LLM-bas
 
 
 
-<img src="assets/main_figure.png" width="800px">
-
-*Figure 1: Overview of LLM-based code generation challenges and opportunities for Low-Resource Programming Languages (LRPLs) and Domain-Specific Languages (DSLs). [Placeholder - will be updated with actual survey figure]*
-
-
-
 ---
-
-## 📖 Overview
-
-Large Language Models (LLMs) have shown remarkable capabilities in code generation for popular programming languages. However, their performance in **Low-Resource Programming Languages (LRPLs)** and **Domain-Specific Languages (DSLs)** remains a critical challenge. This gap affects millions of developers - with Rust alone having 3.5 million users - who are currently unable to fully leverage LLM capabilities. 
-
-Our survey fills this gap by providing a **systematic review of 111 papers** filtered from over 27,000 published studies from 2020-2025, investigating the capabilities and limitations of LLMs in these specialized domains. We identify four main evaluation techniques, categorize enhancement methods into six groups, and analyze dataset curation approaches for LRPLs and DSLs.
 
 ## 🔥 What's New
 
@@ -34,7 +22,21 @@ Our survey fills this gap by providing a **systematic review of 111 papers** fil
 - **[September 2025]** 📊 Comprehensive analysis of 111 papers covering 40+ programming languages
 - **[September 2025]** 🚀 Repository launched with complete paper categorization and analysis
 
-## 🎯 Key Contributions
+## 📖 Overview
+
+Large Language Models (LLMs) have shown remarkable capabilities in code generation for popular programming languages. However, their performance in **Low-Resource Programming Languages (LRPLs)** and **Domain-Specific Languages (DSLs)** remains a critical challenge. This gap affects millions of developers - with Rust alone having 3.5 million users - who are currently unable to fully leverage LLM capabilities. 
+
+Our survey fills this gap by providing a **systematic review of 111 papers** filtered from over 27,000 published studies from 2020-2025, investigating the capabilities and limitations of LLMs in these specialized domains. We identify four main evaluation techniques, categorize enhancement methods into six groups, and analyze dataset curation approaches for LRPLs and DSLs.
+
+<div align="center">
+
+<img src="assets/heatmap.PNG" width="800px">
+
+*Figure 3: Performance comparison between High-Resource Programming Languages (HRPLs) and Low-Resource Programming Languages (LRPLs) on the MultiPL-E benchmark. The heatmap shows significant performance disparities, between for example, Python and Rust.*
+
+</div>
+
+### 🎯 Key Contributions
 
 - **Comprehensive Literature Review**: Systematic analysis of 111 papers from 27,000+ studies (2020-2025)
 - **Performance Gap Analysis**: Quantitative comparison showing significant disparities between HRPLs and LRPLs/DSLs
@@ -42,138 +44,6 @@ Our survey fills this gap by providing a **systematic review of 111 papers** fil
 - **Evaluation Framework**: Four evaluation approaches with domain-specific metrics
 - **Dataset Analysis**: Comprehensive review of data curation and preparation strategies
 - **Research Roadmap**: Identification of challenges and opportunities for future research
-
-## 📊 Survey Statistics
-
-<div align="center">
-
-<img src="assets/survey_statistics.png" width="700px">
-
-*Figure 2: Survey statistics showing distribution of papers across years, venues, and language types. The chart illustrates the growing research interest in LRPL/DSL code generation from 2020 to 2024. [Placeholder - will be updated with actual figure]*
-
-</div>
-
-| **Metric** | **Count** |
-|------------|-----------|
-| Total Papers Reviewed | 111 |
-| Initial Paper Pool | 27,000+ |
-| Time Period | 2020-2025 |
-| Programming Languages | 40+ |
-| Research Venues | 39 |
-| LRPL Papers | 51 |
-| DSL Papers | 59 |
-| Both LRPL & DSL | 1 |
-
-## 🚀 Performance Analysis
-
-<div align="center">
-
-<img src="assets/performance_comparison.png" width="800px">
-
-*Figure 3: Performance comparison between High-Resource Programming Languages (HRPLs) and Low-Resource Programming Languages (LRPLs) on the MultiPL-E benchmark. The heatmap shows significant performance disparities, with Python achieving 28.4-51.2% while Rust achieves only 0.7-22.6%. [Placeholder - will be updated with actual heatmap from paper]*
-
-</div>
-
-### Key Findings:
-- **Significant Performance Gap**: LRPLs show 40-60% lower performance compared to HRPLs
-- **Language Variability**: Even within LRPLs, performance varies dramatically (Rust: 0.7-22.6%, R: 0.0-14.5%)
-- **Model Consistency**: The gap is consistent across different LLM architectures
-
-## 🔤 Language Coverage
-
-### Low-Resource Programming Languages (LRPLs)
-- **Systems Programming**: Rust (3.5M developers), D, Nim, Crystal
-- **Mobile Development**: Swift (4.5M), Dart (2.9M), Kotlin
-- **Scripting**: Ruby (2.3M), Perl, Lua (1.6M), PowerShell
-- **Functional**: Haskell, Scala, OCaml, Racket
-- **Scientific**: R, Julia, Fortran
-- **Shell**: Bash, Command Line Interfaces
-
-### Domain-Specific Languages (DSLs)
-- **Hardware Design**: Verilog, VHDL, SystemVerilog
-- **Infrastructure**: Ansible, YAML, Terraform HCL
-- **Formal Methods**: Lean, Coq, F*, Verus, UCLID5
-- **Query Languages**: CQL, M (Power Query)
-- **Logic & Specification**: FOL, LTL, Regex
-- **Scientific Domains**: XDL (Chemistry), PDDL (Planning), SMILES
-- **Industrial Control**: IEC-61131-3, SKILL
-
-## 🛠️ Enhancement Techniques
-
-<div align="center">
-
-<img src="assets/enhancement_techniques.png" width="700px">
-
-*Figure 4: Distribution of enhancement techniques used across surveyed papers. Fine-tuning dominates with 48 papers, followed by prompting strategies (25 papers) and pre-training approaches (22 papers). [Placeholder - will be updated with actual chart]*
-
-</div>
-
-### 1. Model Adaptation Techniques (70 papers)
-- **Fine-tuning**: Most popular approach (48 papers)
-- **Pre-training**: Domain-specific training (22 papers)
-- **Parameter-Efficient Fine-Tuning**: LoRA, QLoRA methods
-
-### 2. Prompting Strategies (25 papers)
-- **Advanced Prompting**: Grammar prompting, hierarchical prompting
-- **Few-shot Learning**: Domain-specific examples
-- **Chain-of-Thought**: Step-by-step reasoning
-
-### 3. Iterative Feedback (11 papers)
-- **Compiler Integration**: Error-driven improvement
-- **Human-in-the-Loop**: Expert guidance
-- **Automated Correction**: Tool-assisted refinement
-
-### 4. Retrieval-Augmented Generation (6 papers)
-- **Documentation Retrieval**: Context-aware generation
-- **Example-based**: Similar code retrieval
-
-### 5. Novel Architectures (3 papers)
-- **Multi-expert Models**: Language-specific routing
-- **Mixture-of-Experts**: Specialized model components
-
-### 6. Other Techniques
-- **Knowledge Distillation**: Teacher-student approaches
-- **Custom DSL Creation**: Intermediate language design
-
-## 📊 Evaluation Landscape
-
-### Automatic Evaluation Metrics
-- **Functional Correctness**: pass@k (most common)
-- **Similarity Metrics**: BLEU, ROUGE, Edit Distance
-- **Execution-based**: Compilation rate, runtime correctness
-
-### Domain-Specific Metrics
-- **Hardware (Verilog)**: Power-Performance-Area (PPA), Synthesis success
-- **Logic Languages**: Semantic accuracy, logical equivalence
-- **Infrastructure**: Schema correctness, deployment success
-
-### Manual Evaluation
-- **Expert Assessment**: Domain-specific validation
-- **Human Preference**: User satisfaction studies
-- **Qualitative Analysis**: Code quality and maintainability
-
-## 📚 Major Benchmarks
-
-<div align="center">
-
-<img src="assets/benchmark_overview.png" width="750px">
-
-*Figure 5: Overview of major benchmarks used for LRPL and DSL evaluation. VerilogEval and MultiPL-E emerge as the most widely adopted benchmarks in their respective domains. [Placeholder - will be updated with actual benchmark analysis figure]*
-
-</div>
-
-### Multi-Language Benchmarks
-- **MultiPL-E**: 12+ languages including Rust, Julia, R, Lua
-- **xCodeEval**: Executable evaluation across 11 languages
-- **CodeScope**: Multi-dimensional evaluation framework
-- **MBXP**: Mathematical reasoning across languages
-
-### Domain-Specific Benchmarks
-- **VerilogEval**: Standard hardware design benchmark (widely adopted)
-- **RTLLM**: Register Transfer Level design evaluation
-- **FIMO**: Lean theorem proving challenges
-- **TLDR**: Bash command generation
-- **IaC-Eval**: Infrastructure-as-Code evaluation
 
 
 ## 📋 Complete Paper List
