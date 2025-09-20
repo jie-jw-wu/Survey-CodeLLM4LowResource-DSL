@@ -2,7 +2,7 @@
 <div align="center">
 
 [![arXiv](https://img.shields.io/badge/arXiv-2410.03981-b31b1b.svg)](https://arxiv.org/pdf/2410.03981)
-[![GitHub Stars](https://img.shields.io/github/stars/username/Survey-CodeLLM4LowResource-DSL?style=social)](https://github.com/username/Survey-CodeLLM4LowResource-DSL)
+[![GitHub Stars](https://img.shields.io/github/stars/jie-jw-wu/Survey-CodeLLM4LowResource-DSL?style=social)](https://github.com/username/Survey-CodeLLM4LowResource-DSL)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-2024-blue)]()
