@@ -17,7 +17,6 @@ This repository contains resources referenced in the paper: [A Survey on LLM-bas
 
 - **[2024]** 📄 Survey paper submitted: "A Survey on LLM-based Code Generation for Low-Resource and Domain-Specific Programming Languages"
 - **[2024]** 📊 Comprehensive analysis of 111 papers covering 40+ programming languages
-- **[2024]** 🚀 Repository launched with complete paper categorization and analysis
 
 ## 📖 Overview
 
@@ -433,6 +432,6 @@ High-quality datasets are fundamental to training LLMs for code generation tasks
 
 ---
 
-*Last updated: 2024*
+*Last updated: 2025*
 
 </div>
