@@ -206,13 +206,13 @@ High-quality datasets are fundamental to training LLMs for code generation tasks
 #### Systems Programming
 - **Rust**: 
   - [128] **OctoPack: Instruction tuning code large language models** - *Muennighoff et al., 2023* - [Paper](https://arxiv.org/abs/2308.07124)
-  - [30] **Assessing Code Generation with Intermediate Languages** - *Deng et al., 2024*
-  - [47] **ReflectionCoder: Learning from Reflection Sequence for Enhanced One-off Code Generation** - *Ren et al., 2024*
+  - [30] **Assessing Code Generation with Intermediate Languages** - *Deng et al., 2024* - [Paper](https://arxiv.org/abs/2407.05411)
+  - [47] **ReflectionCoder: Learning from Reflection Sequence for Enhanced One-off Code Generation** - *Ren et al., 2024* - [Paper]()
   - [187] **MagiCoder: Empowering Code Generation with OSS-INSTRUCT** - *Wei et al., 2024* - [Paper](https://arxiv.org/abs/2312.02120)
   - [140] **IRCoder: Intermediate Representations Make Language Models Robust Multilingual Code Generators** - *Paul et al., 2024* - [Paper](https://arxiv.org/abs/2403.03894)
   - [176] **Investigating the performance of language models for completing code in functional programming languages: a haskell case study** - *Van Dam et al., 2024* - [Paper](https://arxiv.org/abs/2403.15185)
-  - [15] **McEval: Massively Multilingual Code Evaluation** - *Chai et al., 2025*
-  - [64] **Kotlin ML Pack: Technical Report** - *Titov et al., 2024*
+  - [15] **McEval: Massively Multilingual Code Evaluation** - *Chai et al., 2025* - [Paper](https://arxiv.org/abs/2406.07436)
+  - [64] **Kotlin ML Pack: Technical Report** - *Titov et al., 2024* - [Paper](https://arxiv.org/abs/2405.19250)
 
 - **D**: 
   - [140] **IRCoder: Intermediate Representations Make Language Models Robust Multilingual Code Generators** - *Paul et al., 2024* - [Paper](https://arxiv.org/abs/2403.03894)
@@ -237,7 +237,7 @@ High-quality datasets are fundamental to training LLMs for code generation tasks
 
 - **Kotlin**: 
   - [6] **Multi-lingual evaluation of code generation models** - *Athiwaratkun et al., 2023* - [Paper](https://arxiv.org/abs/2210.14868)
-  - [64] **Kotlin ML Pack: Technical Report** - *Titov et al., 2024*
+  - [64] **Kotlin ML Pack: Technical Report** - *Titov et al., 2024* - [Paper]()
   - [92] **Language models for code completion: A practical evaluation** - *Izadi et al., 2024* - [Paper](https://arxiv.org/abs/2402.16197)
   - [102] **XCodeEval: An Execution-based Large Scale Multilingual Multitask Benchmark** - *Khan et al., 2024* - [Paper](https://arxiv.org/abs/2303.03004)
   - [143] **HumanEval-XL: A Multilingual Code Generation Benchmark** - *Peng et al., 2024* - [Paper](https://arxiv.org/abs/2402.16694)
@@ -261,8 +261,8 @@ High-quality datasets are fundamental to training LLMs for code generation tasks
   - [137] **Measuring the impact of programming language distribution** - *Orlanski et al., 2023* - [Paper](https://arxiv.org/abs/2302.01973)
 
 - **PowerShell**: 
-  - [109] **The Power of Words: Generating PowerShell Attacks from Natural Language** - *Liguori et al., 2024*
-  - [191] **Advancing Theorem Proving in LLMs through Large-Scale Synthetic Data** - *Xin et al., 2024*
+  - [109] **The Power of Words: Generating PowerShell Attacks from Natural Language** - *Liguori et al., 2024* - [Paper](https://dl.acm.org/doi/10.5555/3696933.3696937)
+  - [191] **Advancing Theorem Proving in LLMs through Large-Scale Synthetic Data** - *Xin et al., 2024* - [Paper](https://arxiv.org/abs/2405.14333)
 
 #### Functional Programming
 - **Haskell**: 
@@ -288,9 +288,9 @@ High-quality datasets are fundamental to training LLMs for code generation tasks
   - [13] **Knowledge transfer from high-resource to low-resource programming languages for code llms** - *Cassano et al., 2024* - [Paper](https://arxiv.org/abs/2308.09895)
   - [14] **MultiPL-E: A Scalable and Polyglot Approach to Benchmarking Neural Code Generation** - *Cassano et al., 2023* - [Paper](https://arxiv.org/abs/2208.08227)
   - [33] **GenCodeSearchNet: A Benchmark Test Suite for Evaluating Generalization in Programming Language Understanding** - *Diera et al., 2023* - [Paper](https://arxiv.org/abs/2311.09707)
-  - [125] **User Centric Evaluation of Code Generation Tools** - *Miah & Zhu, 2024*
-  - [147] **Time-Efficient Code Completion Model for the R Programming Language** - *Popov et al., 2021*
-  - [118] **Python is Not Always the Best Choice: Embracing Multilingual Program of Thoughts** - *Luo et al., 2024*
+  - [125] **User Centric Evaluation of Code Generation Tools** - *Miah & Zhu, 2024* - [Paper](https://arxiv.org/abs/2402.03130)
+  - [147] **Time-Efficient Code Completion Model for the R Programming Language** - *Popov et al., 2021* - [Paper](https://aclanthology.org/2021.nlp4prog-1.4/)
+  - [118] **Python is Not Always the Best Choice: Embracing Multilingual Program of Thoughts** - *Luo et al., 2024* - [Paper](https://aclanthology.org/2024.emnlp-main.408/)
 
 - **Julia**: 
   - [12] **A Comparative Study of Code Generation using ChatGPT 3.5 across 10 Programming Languages** - *Buscemi, 2023* - [Paper](https://arxiv.org/abs/2308.04477)
@@ -306,8 +306,8 @@ High-quality datasets are fundamental to training LLMs for code generation tasks
 
 #### Shell & Command Line
 - **Bash**: 
-  - [146] **DocCGen: Document-based Controlled Code Generation** - *Pimparkhede et al., 2024*
-  - [162] **ShellGPT: Generative Pre-trained Transformer Model for Shell Language Understanding** - *Shi et al., 2023*
+  - [146] **DocCGen: Document-based Controlled Code Generation** - *Pimparkhede et al., 2024* - [Paper](https://arxiv.org/abs/2406.11925)
+  - [162] **ShellGPT: Generative Pre-trained Transformer Model for Shell Language Understanding** - *Shi et al., 2023* - [Paper](https://ieeexplore.ieee.org/document/10301251)
   - [179] **Tackling Execution-Based Evaluation for NL2Bash** - *Vo et al., 2024* - [Paper](https://arxiv.org/abs/2405.06807)
   - [196] **InterCode: standardizing and benchmarking interactive coding with execution feedback** - *Yang et al., 2023* - [Paper](https://arxiv.org/abs/2306.14898)
   - [215] **DocPrompting: Generating Code by Retrieving the Docs** - *Zhou et al., 2023* - [Paper](https://arxiv.org/abs/2207.05987)
@@ -316,35 +316,35 @@ High-quality datasets are fundamental to training LLMs for code generation tasks
 
 #### Hardware Description Languages (25 papers)
 - **Verilog**: 
-  - [19] **Data is all you need: Finetuning llms for chip design via an automated design-data augmentation framework** - *Chang et al., 2024*
-  - [25] **Origen: Enhancing rtl code generation with code-to-code augmentation and self-reflection** - *Cui et al., 2024*
-  - [78] **Autovcoder: A systematic framework for automated verilog code generation using llms** - *Gao et al., 2024*
-  - [80] **From English to ASIC: Hardware Implementation with Large Language Model** - *Goh et al., 2024*
+  - [19] **Data is all you need: Finetuning llms for chip design via an automated design-data augmentation framework** - *Chang et al., 2024* - [Paper](https://dl.acm.org/doi/10.1145/3649329.3657356)
+  - [25] **Origen: Enhancing rtl code generation with code-to-code augmentation and self-reflection** - *Cui et al., 2024* - [Paper](https://dl.acm.org/doi/10.1145/3676536.3676830)
+  - [78] **Autovcoder: A systematic framework for automated verilog code generation using llms** - *Gao et al., 2024* - [Paper](https://arxiv.org/abs/2407.18333)
+  - [80] **From English to ASIC: Hardware Implementation with Large Language Model** - *Goh et al., 2024* - [Paper](https://arxiv.org/abs/2403.07039)
   - [113] **Verilogeval: Evaluating large language models for verilog code generation** - *Liu et al., 2023* - [Paper](https://arxiv.org/abs/2309.07544)
   - [114] **RTLCoder: Outperforming GPT-3.5 in Design RTL Generation** - *Liu et al., 2024* - [Paper](https://arxiv.org/abs/2312.08617)
-  - [117] **Rtllm: An open-source benchmark for design rtl generation with large language model** - *Lu et al., 2024*
+  - [117] **Rtllm: An open-source benchmark for design rtl generation with large language model** - *Lu et al., 2024* - [Paper](https://arxiv.org/abs/2308.05345)
   - [130] **A multi-expert large language model architecture for verilog code generation** - *Nadimi & Zheng, 2024* - [Paper](https://arxiv.org/abs/2404.08029)
-  - [142] **BetterV: controlled verilog generation with discriminative guidance** - *Pei et al., 2024*
-  - [149] **AutoBench: Automatic Testbench Generation and Evaluation Using LLMs for HDL Design** - *Qiu et al., 2024*
+  - [142] **BetterV: controlled verilog generation with discriminative guidance** - *Pei et al., 2024* - [Paper](https://dl.acm.org/doi/10.5555/3692070.3693698)
+  - [149] **AutoBench: Automatic Testbench Generation and Evaluation Using LLMs for HDL Design** - *Qiu et al., 2024* - [Paper](https://dl.acm.org/doi/10.1145/3670474.3685956)
   - [170] **Benchmarking large language models for automated verilog rtl code generation** - *Thakur et al., 2023* - [Paper](https://arxiv.org/abs/2212.11140)
   - [172] **Advanced Large Language Model (LLM)-Driven Verilog Development** - *Thorat et al., 2023* - [Paper](https://arxiv.org/abs/2312.01022)
-  - [177] **VHDLEval: A Framework for Evaluating Large Language Models in VHDL Code Generation** - *Vijayaraghavan et al., 2024*
-  - [208] **MG-Verilog: Multi-grained Dataset Towards Enhanced LLM-assisted Verilog Generation** - *Zhang et al., 2024*
-  - [210] **CodeV: Empowering LLMs for Verilog Generation through Multi-Level Summarization** - *Zhao et al., 2024*
+  - [177] **VHDLEval: A Framework for Evaluating Large Language Models in VHDL Code Generation** - *Vijayaraghavan et al., 2024* - [Paper](https://arxiv.org/abs/2406.04379)
+  - [208] **MG-Verilog: Multi-grained Dataset Towards Enhanced LLM-assisted Verilog Generation** - *Zhang et al., 2024* - [Paper](https://arxiv.org/abs/2407.01910)
+  - [210] **CodeV: Empowering LLMs for Verilog Generation through Multi-Level Summarization** - *Zhao et al., 2024* - [Paper](https://arxiv.org/abs/2407.10424)
 
 - **VHDL**: 
-  - [177] **VHDLEval: A Framework for Evaluating Large Language Models in VHDL Code Generation** - *Vijayaraghavan et al., 2024*
+  - [177] **VHDLEval: A Framework for Evaluating Large Language Models in VHDL Code Generation** - *Vijayaraghavan et al., 2024* - [Paper](https://arxiv.org/abs/2406.04379)
 
 - **System Verilog**: 
   - [75] **Hardware phi-1.5 b: A large language model encodes hardware domain specific knowledge** - *Fu et al., 2024* - [Paper](https://arxiv.org/abs/2402.01728)
-  - [99] **(Security) Assertions by Large Language Models** - *Kande et al., 2024*
+  - [99] **(Security) Assertions by Large Language Models** - *Kande et al., 2024* - [Paper](https://ieeexplore.ieee.org/document/10458667)
   - [121] **Chiraag: Chatgpt informed rapid and automated assertion generation** - *Mali et al., 2024* - [Paper](https://arxiv.org/abs/2402.00093)
-  - [194] **AssertLLM: Generating Hardware Verification Assertions from Design Specifications via Multi-LLMs** - *Yan et al., 2025***: 
+  - [194] **AssertLLM: Generating Hardware Verification Assertions from Design Specifications via Multi-LLMs** - *Yan et al., 2025***:  - [Paper](https://arxiv.org/abs/2402.00386)
 
 #### Infrastructure & Automation (7 papers)
 - **Ansible**: 
-  - [132] **KubePlaybook: A Repository of Ansible Playbooks for Kubernetes Auto-Remediation with LLMs** - *Namrud et al., 2024*
-  - [146] **DocCGen: Document-based Controlled Code Generation** - *Pimparkhede et al., 2024*
+  - [132] **KubePlaybook: A Repository of Ansible Playbooks for Kubernetes Auto-Remediation with LLMs** - *Namrud et al., 2024* - [Paper](https://dl.acm.org/doi/10.1145/3629527.3653665)
+  - [146] **DocCGen: Document-based Controlled Code Generation** - *Pimparkhede et al., 2024* - [Paper](https://aclanthology.org/2024.emnlp-main.1040/)
   - [148] **Automated Code Generation for Information Technology Tasks in YAML through Large Language Models** - *Pujar et al., 2025* - [Paper](https://arxiv.org/abs/2305.02783)
   - [154] **Ansible lightspeed: A code generation service for it automation** - *Sahoo et al., 2024* - [Paper](https://arxiv.org/abs/2402.17442)
 
@@ -352,39 +352,39 @@ High-quality datasets are fundamental to training LLMs for code generation tasks
   - [207] **On the effectiveness of large language models for github workflows** - *Zhang et al., 2024* - [Paper](https://arxiv.org/abs/2403.12446)
 
 - **Terraform HCL**: 
-  - [103] **Iac-eval: A code generation benchmark for cloud infrastructure-as-code programs** - *Kon et al., 2024*
+  - [103] **Iac-eval: A code generation benchmark for cloud infrastructure-as-code programs** - *Kon et al., 2024* - [Paper](https://proceedings.neurips.cc/paper_files/paper/2024/file/f26b29298ae8acd94bd7e839688e329b-Paper-Datasets_and_Benchmarks_Track.pdf)
 
 #### Formal Methods & Verification (10 papers)
 - **Lean**: 
-  - [36] **Towards a Mathematics Formalisation Assistant using Large Language Models** - *Agrawal et al., 2022*
+  - [36] **Towards a Mathematics Formalisation Assistant using Large Language Models** - *Agrawal et al., 2022* - [Paper](https://arxiv.org/abs/2211.07524)
   - [41] **FIMO: A Challenge Formal Dataset for Automated Theorem Proving** - *Liu et al., 2023* - [Paper](https://arxiv.org/abs/2309.04295)
-  - [191] **Advancing Theorem Proving in LLMs through Large-Scale Synthetic Data** - *Xin et al., 2024*
+  - [191] **Advancing Theorem Proving in LLMs through Large-Scale Synthetic Data** - *Xin et al., 2024* - [Paper](https://arxiv.org/abs/2405.14333)
 
 - **Coq**: 
   - [74] **Enhancing Formal Theorem Proving: A Comprehensive Dataset for Training AI Models on Coq Code** - *Florath, 2024* - [Paper](https://arxiv.org/abs/2403.12627)
 
 - **F***: 
-  - [16] **Towards Neural Synthesis for SMT-Assisted Proof-Oriented Programming** - *Chakraborty et al., 2025*
+  - [16] **Towards Neural Synthesis for SMT-Assisted Proof-Oriented Programming** - *Chakraborty et al., 2025* - [Paper](https://arxiv.org/abs/2405.01787)
 
 - **Verus**: 
   - [200] **Leveraging Large Language Models for Automated Proof Synthesis in Rust** - *Yao et al., 2023* - [Paper](https://arxiv.org/abs/2311.03739)
 
 - **UCLID5**: 
-  - [126] **Synthetic programming elicitation for text-to-code in very low-resource programming and formal languages** - *Mora et al., 2024*
+  - [126] **Synthetic programming elicitation for text-to-code in very low-resource programming and formal languages** - *Mora et al., 2024* - [Paper](https://arxiv.org/abs/2406.03636)
 
 #### Logic & Specification Languages (8 papers)
 - **FOL**: 
   - [85] **Formal Specifications from Natural Language** - *Hahn et al., 2022* - [Paper](https://arxiv.org/abs/2206.01962)
-  - [136] **LINC: A Neurosymbolic Approach for Logical Reasoning by Combining Language Models with First-Order Logic Provers** - *Olausson et al., 2023*
-  - [199] **Harnessing the Power of Large Language Models for Natural Language to First-Order Logic Translation** - *Yang et al., 2024*
+  - [136] **LINC: A Neurosymbolic Approach for Logical Reasoning by Combining Language Models with First-Order Logic Provers** - *Olausson et al., 2023* - [Paper](https://arxiv.org/abs/2310.15164)
+  - [199] **Harnessing the Power of Large Language Models for Natural Language to First-Order Logic Translation** - *Yang et al., 2024* - [Paper](https://arxiv.org/abs/2305.15541)
 
 - **LTL**: 
-  - [24] **nl2spec: Interactively translating unstructured natural language to temporal logics with large language models** - *Cosler et al., 2023*
+  - [24] **nl2spec: Interactively translating unstructured natural language to temporal logics with large language models** - *Cosler et al., 2023* - [Paper](https://arxiv.org/abs/2303.04864)
   - [85] **Formal Specifications from Natural Language** - *Hahn et al., 2022* - [Paper](https://arxiv.org/abs/2206.01962)
 
 - **Regex**: 
   - [85] **Formal Specifications from Natural Language** - *Hahn et al., 2022* - [Paper](https://arxiv.org/abs/2206.01962)
-  - [115] **Neural Generation of Regular Expressions from Natural Language with Minimal Domain Knowledge** - *Locascio et al., 2016*
+  - [115] **Neural Generation of Regular Expressions from Natural Language with Minimal Domain Knowledge** - *Locascio et al., 2016* - [Paper](https://arxiv.org/abs/1608.03000)
 
 #### Scientific & Specialized Domains (9 papers)
 - **Excel Formulas**: 
@@ -397,7 +397,7 @@ High-quality datasets are fundamental to training LLMs for code generation tasks
   - [165] **Errors are Useful Prompts: Instruction Guided Task Programming with Verifier-Assisted Iterative Prompting** - *Skreta et al., 2023* - [Paper](https://arxiv.org/abs/2303.14100)
 
 - **PDDL**: 
-  - [166] **Generating consistent PDDL domains with Large Language Models** - *Smirnov et al., 2024*
+  - [166] **Generating consistent PDDL domains with Large Language Models** - *Smirnov et al., 2024* - [Paper](https://arxiv.org/abs/2404.07751)
   - [180] **Grammar prompting for domain-specific language generation with large language models** - *Wang et al., 2023* - [Paper](https://arxiv.org/abs/2305.19234)
 
 - **SMILES**: 
