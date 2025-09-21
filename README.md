@@ -15,6 +15,7 @@ This repository contains resources referenced in the paper: [A Survey on LLM-bas
 
 ## 🔥 What's New
 
+- **[2025]** 📄 Survey paper is accepted at ACM Transactions on Software Engineering and Methodology (TOSEM)
 - **[2024]** 📄 Survey paper submitted: "A Survey on LLM-based Code Generation for Low-Resource and Domain-Specific Programming Languages"
 - **[2024]** 📊 Comprehensive analysis of 111 papers covering 40+ programming languages
 
