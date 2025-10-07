@@ -418,10 +418,11 @@ High-quality datasets are fundamental to training LLMs for code generation tasks
 If you find this work useful, please cite the following reference:
 ```bibtex
 @article{joel2024survey,
-  title={A survey on llm-based code generation for low-resource and domain-specific programming languages},
-  author={Joel, Sathvik and Wu, Jie JW and Fard, Fatemeh H},
-  journal={arXiv preprint arXiv:2410.03981},
-  year={2024}
+  title = {A Survey on LLM-based Code Generation for Low-Resource and Domain-Specific Programming Languages},
+  author = {Joel, Sathvik and Wu, Jie JW and Fard, Fatemeh H.},
+  journal = {arXiv preprint arXiv:2410.03981},
+  year = {2024},
+  url = {https://arxiv.org/abs/2410.03981v3}
 }
 ```
 
