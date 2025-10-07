@@ -9,7 +9,7 @@
 
 </div>
 
-This repository contains resources referenced in the paper: [A Survey on LLM-based Code Generation for Low-Resource and Domain-Specific Programming Languages](https://arxiv.org/pdf/2410.03981).
+This repository contains resources referenced in the paper: [A Survey on LLM-based Code Generation for Low-Resource and Domain-Specific Programming Languages](https://arxiv.org/pdf/2410.03981v3).
 
 ---
 
@@ -415,7 +415,7 @@ High-quality datasets are fundamental to training LLMs for code generation tasks
   - 📧 [fatemeh.fard@ubc.ca](mailto:fatemeh.fard@ubc.ca)  
 
 ## 📜 Citation  
-
+If you find this work useful, please cite the following reference:
 ```bibtex
 @article{joel2024survey,
   title={A survey on llm-based code generation for low-resource and domain-specific programming languages},
