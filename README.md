@@ -5,7 +5,7 @@
 [![GitHub Stars](https://img.shields.io/github/stars/jie-jw-wu/Survey-CodeLLM4LowResource-DSL?style=social)](https://github.com/username/Survey-CodeLLM4LowResource-DSL)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-[![Last Updated](https://img.shields.io/badge/Last%20Updated-2024-blue)]()
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-2025-blue)]()
 
 </div>
 
